@@ -1,0 +1,144 @@
+p{
+    color:rgb(0, 204, 255);
+    font-size: 5.5vw;
+    font-family: "Rubik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 55%;
+    height: 75%;
+    margin: auto;
+  }
+
+.disable-cursor{
+    cursor: default;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover){
+    opacity: 0.15;
+    transition: 250ms;
+    transition-duration: 200ms;
+}
+span{
+    letter-spacing: -0.27em;
+}
+.fancy > .letter{
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+.fancy:hover > .letter{
+    transition-duration: 800ms;
+    transition: all 0.5s ease;
+    font-size: 6.32vw;
+}
+
+
+
+
+.fancy:hover > .letter:nth-child(1){
+    transform: translate(-80%, 60%) rotate(8deg);
+    color: aqua;
+}
+.fancy:hover > .letter:nth-child(2){
+    transform: translate(-40%, 20%) rotate(4deg);
+    color: brown;
+}
+.fancy:hover > .letter:nth-child(3){
+    transform: translate(-10%, 60%) rotate(-6deg);
+    color: yellow;
+}
+.fancy:hover > .letter:nth-child(4){
+    transform: translate(0%, 8%) rotate(-8deg);
+    color: blueviolet;
+}
+.fancy:hover > .letter:nth-child(5){
+    transform: translate(0%, -20%) rotate(5deg);
+    color: green;
+}
+.fancy:hover > .letter:nth-child(6){
+    transform: translate(0%, 20%) rotate(-3deg);
+    color: orange;
+}
+.fancy:hover > .letter:nth-child(7){
+    transform: translate(0%, -40%) rotate(-5deg);
+    color: crimson;
+}
+.fancy:hover > .letter:nth-child(8){
+    transform: translate(0%, 15%) rotate(10deg);
+    color: hotpink;
+}
+.fancy:hover > .letter:nth-child(9){
+    transform: translate(0%, -50%) rotate(8deg);
+    color: lightskyblue;
+}
+.fancy:hover > .letter:nth-child(10){
+    transform: translate(0%, 15%) rotate(-6deg);
+    color: springgreen;
+}
+
+
+.sl1{
+    color:yellow;
+}
+.sl1:hover{
+    background: linear-gradient(to right, #ff0000, #ff9900, #e0d075);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease;
+    font-size: 6.5vw;
+}
+
+.sl2{
+    color:rgb(255, 0, 0);
+}
+.sl2:hover{
+    background: linear-gradient(to right, #ff0000, #ff9900, #e0d075);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease;
+    font-size: 6.5vw;
+}
+
+.sl3{
+    color:rgb(21, 255, 0);
+}
+.sl3:hover{
+    background: linear-gradient(to right, #fbff00, #ff7b00, #51ff25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease;
+    font-size: 6.5vw;
+}
+
+
+#text:has(.sl1:hover) .word:not(.sl1:hover){
+    opacity: 0.4;
+    transition: 250ms;
+    transition-duration: 200ms;
+}
+#text:has(.sl2:hover) .word:not(.sl2:hover){
+    opacity: 0.5;
+    transition: 250ms;
+    transition-duration: 200ms;
+}
+#text:has(.sl3:hover) .word:not(.sl3:hover){
+    opacity: 0.5;
+    transition: 250ms;
+    transition-duration: 200ms;
+}
