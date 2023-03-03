@@ -49,7 +49,7 @@ span{
 
 
 .fancy:hover > .letter:nth-child(1){
-    transform: translate(-80%, 60%) rotate(8deg);
+    transform: translate(-65%, 40%) rotate(8deg);
     color: aqua;
 }
 .fancy:hover > .letter:nth-child(2){
@@ -141,4 +141,11 @@ span{
     opacity: 0.5;
     transition: 250ms;
     transition-duration: 200ms;
+}
+
+.unique{
+    color: #ff7b00;
+}
+.uniquex{
+    color: #f475ff;
 }
