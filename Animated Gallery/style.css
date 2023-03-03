@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(16, 16, 16);
+    height: 100vh;  
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  #gallery {
+    height: 140vmax;
+    width: 140vmax;  
+    position: absolute;
+  }
+  
+  .tile {
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+  }
+  
+  .tile:hover {
+    transform: scale(1.1);
+  }
+  
+  .tile:hover > img {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  
+  .tile > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 800ms ease,
+    transform 800ms ease;
+  }
+  
+  .tile:nth-child(1) {
+    background-color: rgb(243, 201, 61);
+    height: 15%;
+    width: 24%;
+    left: 10%;
+    top: 12%;
+  }
+  
+  .tile:nth-child(2) {
+    background-color: rgb(107, 186, 252);
+    height: 28%;
+    width: 16%;
+    left: 41%;
+    top: 12%;
+  }
+  
+  .tile:nth-child(3) {
+    background-color: rgb(167, 31, 28);
+    height: 26%;
+    width: 19%;
+    left: 12%;
+    top: 32%;
+  }
+  
+  .tile:nth-child(4) {
+    background-color: rgb(57, 172, 63);
+    height: 28%;
+    width: 20%;
+    left: 47%;
+    top: 45%;
+  }
+  
+  .tile:nth-child(5) {
+    background-color: rgb(191, 121, 204);
+    height: 16%;
+    width: 26%;
+    left: 11%;
+    top: 80%;
+  }
+  
+  .tile:nth-child(6) {
+    background-color: rgb(255, 159, 15);
+    height: 16%;
+    width: 28%;
+    left: 64%;
+    top: 17%;
+  }
+  
+  .tile:nth-child(7) {
+    background-color: rgb(209, 140, 140);
+    height: 16%;
+    width: 27%;
+    left: 44%;
+    top: 78%;
+  }
+  
+  .tile:nth-child(8) {
+    background-color: rgb(136, 102, 89);
+    height: 26%;
+    width: 18%;
+    left: 72%;
+    top: 39%;
+  }
+  
+  .tile:nth-child(9) {
+    background-color: rgb(16, 34, 94);
+    height: 25%;
+    width: 15%;
+    left: 77%;
+    top: 70%;
+  }
+
+  .tile:nth-child(10) {
+    background-color: rgb(202, 202, 202);
+    height: 12%;
+    width: 23%;
+    left: 18%;
+    top: 63%;
+  }
+
+  
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(8vmax);
+  }
+ 
