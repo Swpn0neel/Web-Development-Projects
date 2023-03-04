@@ -1,0 +1,43 @@
+body {
+    /* display: grid;
+    place-items: start; */
+    height: 100vh;
+    background-color: black;
+    margin-left: 3rem;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 5rem;
+    text-align: left;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 7rem;
+    /* font-size: clamp(3rem, 10vw, 10rem); */
+    /* padding: 0rem clamp(1rem, 2vw, 3rem); */
+    /* border-radius: clamp(0.4rem, 0.75vw, 1rem); */
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    clip-path: polygon(
+      0% 0%, /* top left */
+      90% 0%, /* top right */
+      100% 100%, /* bottom right */
+      0% 100% /* bottom left */
+    );
+  }
+  
+  h1:hover {
+    background-image: linear-gradient(to right, #ffffff, #20c20e);
+    color: black;
+    transition: 400ms ease;
+  }
+
+.disable-cursor{
+    cursor: default;
+}
