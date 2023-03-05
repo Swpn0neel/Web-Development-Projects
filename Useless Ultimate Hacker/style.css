@@ -27,7 +27,7 @@ body {
   background-image: linear-gradient(to left,#000000, #1a850e);
 }
   
-  h1 {
+  .nh {
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
     text-align: left;
@@ -48,19 +48,36 @@ body {
     );
   }
   
-  h1:hover {
+  .nh:hover {
     background-image: linear-gradient(to right, #e9e9e9, #20c20e);
     color: black;
     transition: 400ms ease;
   }
 
 
-h1:nth-child(1){
-  margin-top: 2rem;
+.nav:nth-child(1){
+  margin-top: 3rem;
 }
-h1:nth-child(2){
+.nav:nth-child(2){
   margin-top: 13.5rem;
 }
-h1:nth-child(7){
+.nav:nth-child(7){
   margin-top: 17.5rem;
+}
+
+.text{
+  color: #20c20e;
+  margin-left: 24rem;
+  margin-right: 5rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: 500;
+}
+.mh{
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem;
+  text-align: center;
+  color: #e9e9e9;
+  margin-left: 19rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }

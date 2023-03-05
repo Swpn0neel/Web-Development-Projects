@@ -1,1 +1,0 @@
-## Animated Navigation Bar
