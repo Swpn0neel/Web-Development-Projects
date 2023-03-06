@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+    margin: 0rem;
+}
+
+#image-track > .image{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    user-select: none;
+}
+
+.mh{
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    text-align: center;
+    color: #e9e9e9;
+    padding-top: 5rem;
+    padding-bottom: 92rem;
+    /* opacity: 0.9; */
+
+    
+    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; */
+
+  }
