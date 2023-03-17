@@ -9,3 +9,4 @@ A Collection of my Small Web Development Projects
 - Parallax Gallery
 - Useless Ultimate Hacker
 - Animated Card
+- Parallax Menu
